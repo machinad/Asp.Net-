@@ -51,4 +51,8 @@ Partial Class login
         userpassword.Text = ""
         verilocationcode.Text = ""
     End Sub
+
+    Protected Sub register_Click(sender As Object, e As EventArgs) Handles register.Click
+        ScriptManager.RegisterStartupScript(Me, GetType(login), "register", "javascript:register();", True)
+    End Sub
 End Class

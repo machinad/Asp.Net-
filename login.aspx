@@ -18,6 +18,9 @@
         function login_yes() {
             alert("账号或密码错误");
         }
+        function register() {
+            window.location.href = "register.aspx";
+        }
     </script>
     <style type="text/css">
         #forml{
@@ -97,7 +100,9 @@
                         <asp:Button ID="landing" runat="server" Text="登陆" />
                         <asp:Button ID="reset" runat="server" Text="重置" CausesValidation="False" />
                     </td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:Button ID="register" runat="server" Text="注册" CausesValidation="False" />
+                    </td>
                     <td>&nbsp;</td>
                 </tr>
             </table>
